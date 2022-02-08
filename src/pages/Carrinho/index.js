@@ -8,7 +8,7 @@ import { useContext, useMemo, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Container, Voltar, TotalContainer, PagamentoContainer } from './styles';
 
-function Carrinho() {
+const Carrinho = () => {
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const { carrinho, valorTotalCarrinho, efetuarCompra } = useCarrinhoContext();
   const { saldo = 0 } = useContext(UsuarioContext);
@@ -84,6 +84,6 @@ function Carrinho() {
       </Snackbar>
     </Container>
   )
-}
+};
 
 export default Carrinho;

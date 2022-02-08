@@ -5,13 +5,11 @@ import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import { useCarrinhoContext } from 'common/context/Carrinho';
 
-
 function Produto({
   nome,
   foto,
   id,
   valor,
-  unidade
 }) {
 
   const { carrinho, adicionarProduto, removerProduto } = useCarrinhoContext();
@@ -46,6 +44,6 @@ function Produto({
       </div>
     </Container>
   )
-}
+};
 
-export default memo(Produto)
+export default memo(Produto);
