@@ -9,7 +9,7 @@ import {
   Lista,
 } from './styles';
 
-function Feira() {
+const Feira = () => {
   const { nome, saldo } = useContext(UsuarioContext);
   return (
     <Container>

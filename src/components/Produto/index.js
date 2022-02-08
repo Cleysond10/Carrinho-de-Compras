@@ -6,13 +6,12 @@ import RemoveIcon from '@material-ui/icons/Remove';
 import { useCarrinhoContext } from 'common/context/Carrinho';
 
 
-function Produto({
+const Produto = ({
   nome,
   foto,
   id,
   valor,
-  unidade
-}) {
+}) => {
 
   const { carrinho, adicionarProduto, removerProduto } = useCarrinhoContext();
 

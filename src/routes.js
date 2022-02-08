@@ -6,7 +6,7 @@ import { UsusarioProvider } from 'common/context/Ususario';
 import { CarrinhoProvider } from 'common/context/Carrinho';
 import { PagamentoProvider } from 'common/context/Pagamento';
 
-function Router() {
+const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
