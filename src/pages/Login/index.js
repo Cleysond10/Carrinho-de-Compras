@@ -13,13 +13,13 @@ import {
   InputAdornment
 } from '@material-ui/core';
 
-const Login = () => {
+function Login() {
   const history = useHistory();
   const { nome, setNome, saldo, setSaldo } = useContext(UsuarioContext);
   return (
     <Container>
       <Titulo>
-        Insira o seu nome e saldo
+        Insira o seu nome
       </Titulo>
       <InputContainer>
         <InputLabel>

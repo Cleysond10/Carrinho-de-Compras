@@ -6,7 +6,7 @@ import Badge from '@material-ui/core/Badge';
 import { useCarrinhoContext } from 'common/context/Carrinho';
 import { useHistory } from 'react-router-dom';
 
-const NavBar = () => {
+export default function NavBar() {
   const { quantidadeProdutos } = useCarrinhoContext();
   const history = useHistory();
   return (
@@ -26,5 +26,3 @@ const NavBar = () => {
     </Nav>
   )
 }
-
-export default NavBar;
